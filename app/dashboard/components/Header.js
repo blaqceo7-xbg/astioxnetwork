@@ -24,6 +24,7 @@ import { FaCircleUser } from 'react-icons/fa6';
 import LoadingScreen from './../loading';
 import { GiDigDug, GiReceiveMoney } from 'react-icons/gi';
 import ThemeToggle from '@/app/components/ThemeToggle';
+import { PlaneTakeoff } from 'lucide-react';
 
 export const Header = ({tab}) => {
     const router = useRouter();
@@ -77,7 +78,7 @@ export const Header = ({tab}) => {
                 <div className='flex'>
                     <a href="/" className='block dark:hidden'>
                         <Image
-                        src="/icons/logoMain.png"
+                        src="/icons/logoMain2.png"
                         alt="Astiox_logo"
                         className="-ml-6 md:-ml-0 md:w-70"
                         width={150}
@@ -238,7 +239,7 @@ export const Header = ({tab}) => {
               
 
               <div className='space-y-2'>
-                <h5 className='font-semibold px-4 text-sm'>Shortcut</h5>
+                <h5 className='font-semibold px-4 text-sm'>Recommend</h5>
                 <div className="w-full space-y-3 flex flex-wrap justify-start items-baseline px-6 gap-x-8 gap-y-4">
                             
                             <a href='/dashboard/deposit' className="flex gap-1 flex-col justify-center items-center">
@@ -295,7 +296,7 @@ export const Header = ({tab}) => {
                </div>
 
                <div className='space-y-2'>
-                <h5 className='font-semibold px-4 text-sm'>Recommend</h5>
+                <h5 className='font-semibold px-4 text-sm'>Services</h5>
                 <div className="w-full space-y-3 flex flex-wrap justify-start items-baseline px-6 gap-x-8 gap-y-4">
                             
                             
@@ -314,13 +315,21 @@ export const Header = ({tab}) => {
                                 <p className='text-xs'>Loans</p>
                                 <span className='flex bg-blue-100 dark:bg-isoDark2 dark:text-isoColor2 rounded-full text-[10px] px-1 py-0.5 text-isoColor1 absolute -top-4 -right-4'>New</span>
                             </a>
-                            <div onClick={handleTransactionMessage} className="flex relative gap-1 flex-col justify-center items-center">
+
+                            <a href='/dashboard/visa' className="flex relative gap-1 flex-col justify-center items-center">
+                                <span className="rounded-xl bg-[#f4f4f7] dark:bg-isoDark2 dark:text-white text-black p-3 ">
+                                    <PlaneTakeoff className='w-5 h-5' />
+                                </span>
+                                <p className='text-xs'>A-Visa</p>
+                                <span className='flex bg-blue-100 dark:bg-isoDark2 dark:text-isoColor2 rounded-full text-[10px] px-1 py-0.5 text-isoColor1 absolute -top-4 -right-4'>New</span>
+                            </a>
+                            {/*<div onClick={handleTransactionMessage} className="flex relative gap-1 flex-col justify-center items-center">
                                 <span className="rounded-xl bg-[#f4f4f7] dark:bg-isoDark2 dark:text-white text-black p-3 ">
                                     <RiMoneyDollarCircleLine className='w-5 h-5' />
                                 </span>
                                 <p className='text-xs'>A - Refund</p>
                                 <span className='flex bg-blue-100 dark:bg-isoDark2 dark:text-isoColor2 rounded-full text-[10px] px-1 py-0.5 text-isoColor1 absolute -top-4 -right-4'>New</span>
-                            </div>
+                            </div>*/}
                             
                 </div>
                </div>

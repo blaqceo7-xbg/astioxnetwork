@@ -8,6 +8,7 @@ import { IoSettingsOutline } from 'react-icons/io5';
 import { LuArrowDownToLine, LuArrowUpToLine, LuUserRoundCheck, LuUserRoundPlus, LuWallet, LuWalletCards } from 'react-icons/lu';
 import { RiLogoutCircleLine } from 'react-icons/ri';
 import { GiDigDug } from 'react-icons/gi';
+import { PlaneTakeoff } from 'lucide-react';
 
 export const DesktopSideBar = ({tab}) => {
     
@@ -112,6 +113,16 @@ export const DesktopSideBar = ({tab}) => {
                   >
                     <LuUserRoundPlus className="text-lg" />
                     <span>Referral</span>
+                  </span>
+                </a>
+
+                <a 
+                    href="/dashboard/visa" className={`w-full text-base py-3 px-6 rounded-tr-2xl ${tab === "referral" ? "bg-[#f4f4f7] dark:bg-isoColor2 text-black" : ""} rounded-br-2xl font-medium flex items-center hover:bg-[#f4f4f7] dark:hover:bg-isoDark dark:hover:text-white justify-between`}>
+                  <span
+                    className="flex space-x-2 justify-start items-center"
+                  >
+                    <PlaneTakeoff className="text-lg" />
+                    <span>Astiox Visa</span>
                   </span>
                 </a>
 
