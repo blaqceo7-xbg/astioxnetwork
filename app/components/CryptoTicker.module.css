@@ -1,0 +1,86 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 260px;
+  margin-right: 28px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.symbol {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.name {
+  font-size: 12px;
+}
+
+.priceSection {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gain {
+  color: #0ecb81;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.loss {
+  color: #f6465d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.stats {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.leftFade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+  
+}
+
+.rightFade {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+  
+}

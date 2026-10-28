@@ -1,0 +1,32 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/update-mining-profit",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/update-profit-plan-A",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/update-profit-plan-B",
+      "schedule": "0 0 */2 * *"
+    },
+    {
+      "path": "/api/cron/update-profit-plan-C",
+      "schedule": "0 0 */3 * *"
+    },
+    {
+      "path": "/api/cron/update-profit-plan-D",
+      "schedule": "0 0 */4 * *"
+    },
+    {
+      "path": "/api/cron/update-profit-plan-E",
+      "schedule": "0 0 */6 * *"
+    },
+    {
+      "path": "/api/cron/update-profit-plan-F",
+      "schedule": "0 0 */9 * *"
+    }
+  ]
+}
